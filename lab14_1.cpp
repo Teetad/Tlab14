@@ -3,8 +3,20 @@ using namespace std;
 
 template <typename T>
 void insertionSort(T d[],int N){
-
+    for (int i = 1; i < N ; i++){
+		T storage = d[i];
+		int j = i - 1;
+		while (j >= 0 && storage > d[j]){
+			d[j + 1] = d[j];
+			j--;
+		}
+		d[j + 1] = storage;
+		cout << "Pass " << i << ":";
+		for(int i = 0; i < N ; i++) cout << d[i] << " ";
+		cout << "\n";	
+	}
 }
+
 
 int main(){
 	int a[10] = {12,25,30,44,2,0,4,7,55,25};

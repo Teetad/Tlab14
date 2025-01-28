@@ -1,4 +1,9 @@
 {
     "code-runner.saveFileBeforeRun": true,
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "files.associations": {
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xutility": "cpp"
+    }
 }
